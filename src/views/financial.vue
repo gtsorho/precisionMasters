@@ -2,7 +2,7 @@
 <div class="flex justify-evenly">
 <section>
     <!-- component -->
-    <div class="relative flex flex-col bg-clip-border rounded-xl bg-white  text-gray-700 h-[calc(100vh-2rem)] w-full max-w-[15rem]  shadow-xl shadow-blue-gray-900/5">
+    <div class="relative flex flex-col bg-clip-border rounded-xl bg-white left-0  text-gray-700 h-[calc(100vh-2rem)] w-full max-w-[15rem]  shadow-xl shadow-blue-gray-900/5">
         <h2 class="text-4xl text-white  bg-black">
             <span class="text-white font-semibold bg-yellow-500 p-1  md:p-3">T</span>imeline
         </h2>
