@@ -43,7 +43,7 @@
             <source src="../assets/video.mp4" type="video/mp4">
         </video>
     </div>
-    <router-link class="border my-9 border-black text-black  hover:bg-yellow-500 hover:border-clack w-fit hover:text-white py-2 px-11 mx-auto block" :to="{name:'about'}">See More</router-link>
+    <router-link class="border my-9 block border-black text-black  hover:bg-yellow-500 hover:border-clack w-fit hover:text-white py-2 px-11 mx-auto block" :to="{name:'about'}">See More</router-link>
 
 
 </section>

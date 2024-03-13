@@ -14,7 +14,7 @@
                     </button>
                     <p class='text-lg font-base'>{{ faq.question }}</p>
                 </div>
-                <p v-show="faq.isOpen" class="pl-12 py-2 text-justify text-white">{{ faq.answer }}</p>
+                <p v-show="faq.isOpen" class="pl-12 pr-8 py-2 text-justify text-white">{{ faq.answer }}</p>
             </div>
 
         </div>

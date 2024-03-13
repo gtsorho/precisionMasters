@@ -168,13 +168,6 @@ export default {
         return {
             news : [
                 {
-                    // image: new URL('../assets/products/image1.jpg', import.meta.url).href,
-                    image: 'https://images.unsplash.com/photo-1582280776971-087fe7cfa1bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW5nJTIwZXF1aXBtZW50fGVufDB8fDB8fHww',
-                    topic: 'Topic lorem ipsum',
-                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    date: '2024-03-12'
-                },
-                {
                     image: 'https://images.unsplash.com/photo-1505833464198-4993b36cdfab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D',
                     topic: 'Topic ipsum init',
                     content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -212,7 +205,7 @@ export default {
           category: "music video",
           description: "the world at large",
         },
-        
+
         {
           src: new URL('../assets/videos/A quarry site in Ghana1.mp4', import.meta.url).href,
           title: "A quarry site in Ghana",
