@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 class="font-black text-3xl bg-black  text-white text-center uppercase mb-8 py-8 hover:bg-yellow-600 hover:text-white hover:px-6">Latest Events</h2>
-    <div class="animated fadeIn faster px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 text-justify">
+    <div class="animated fadeIn faster px-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-justify">
       <div v-for="(item, index) in news" :key="index" class="block rounded-lg shadow-xl bg-white w-72">
         <div class="relative overflow-hidden bg-cover bg-no-repeat">
           <img class="rounded-lg sm:max-h-52 md:h-64 w-full object-cover " :src="item.image" :alt="item.topic" />
