@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Careers from '../views/careers.vue'
 import Info from '../views/info.vue'
 import Health from '../views/health.vue'
-
+import Financial from '../views/financial.vue'
 
 
 const router = createRouter({
@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/careers',
       name: 'careers',
       component: Careers
+    },
+    {
+      path: '/financial',
+      name: 'financial',
+      component: Financial
     },
     {
       path: '/info',

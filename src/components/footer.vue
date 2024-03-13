@@ -1,5 +1,5 @@
 <template>
-<div class="bg-black mt-9 text-white py-7">
+<div class="bg-black  text-white py-7">
     <div class="container mx-auto">
         <div class="flex flex-wrap">
             <div class="p-4 md:w-1/4">
