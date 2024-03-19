@@ -20,7 +20,7 @@
 </section>
 <section >
     <div>
-        <h2 class="text-center text-2xl font-bold"><span class="bg-black text-white px-3">Financial Statement</span><span class="bg-yellow-500 px-2">2024</span> </h2>
+        <h2 class="text-center text-2xl font-bold"><span class="bg-black text-white px-3">Financial Reports</span><span class="bg-yellow-500 px-2">2024</span> </h2>
     </div>
     <div class="flex items-center justify-center">
         <img src="../assets/Documents-amico.png" class="w-1/2" alt="" srcset="">

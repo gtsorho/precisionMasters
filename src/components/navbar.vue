@@ -13,7 +13,7 @@
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'health'}">Health | Safety</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Statements</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Reports</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'careers'}">Careers</router-link></li>  
         </ul>
       </div>
@@ -33,7 +33,7 @@
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'health'}">Health | Safety</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Statements</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Reports</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'careers'}">Careers</router-link></li>     
       </ul>
     </div>
