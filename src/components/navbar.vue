@@ -6,15 +6,15 @@
         <a href="#"><img src="../assets/logo.jpg" width="150" alt=""></a>
       </h1>
       <div class="hidden md:block">
-        <ul class="flex items-center space-x-8">
+        <ul class="flex items-center space-x-8">        
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#home'}">Home</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'about'}">About</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'about'}">About Us</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#services'}">Services</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'health'}">Health | Safety</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Reports</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'careers'}">Careers</router-link></li>  
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'careers'}">Careers</router-link></li>     
         </ul>
       </div>
       <div class="md:hidden">
@@ -28,12 +28,12 @@
     <div class="mobile-menu  md:hidden" :class="showMobileNav ? 'block': 'hidden'">
       <ul class="mt-4 space-y-4">        
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#home'}">Home</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'about'}">About</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'about'}">About Us</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#services'}">Services</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
-            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'health'}">Health | Safety</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'financial'}">Reports</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
+            <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'info'}">Gallery</router-link></li>
             <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'careers'}">Careers</router-link></li>     
       </ul>
     </div>

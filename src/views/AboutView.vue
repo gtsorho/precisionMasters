@@ -1,7 +1,7 @@
 <template>
     <About/>
-    <div class="container mx-auto mt-8 ">
-        <h2 class="text-lg font-bold text-center bg-black  px-4 text-yellow-500">OBJECTIVES</h2>
+    <div class="container mx-auto bg-black text-white p-3 mt-8">
+        <h2 class="text-lg font-bold text-center bg-yellow-500 px-4 text-white">OBJECTIVES</h2>
 
         <h1 class="text-md font-bold mb-4">Production Optimization:</h1>
         <ul class="list-disc ml-6 mb-4">
@@ -21,7 +21,32 @@
             <li>Conduct regular safety audits and risk assessments to identify and mitigate potential hazards.</li>
             <li>Foster a culture of continuous learning and professional development among employees, aiming to enhance skills, safety awareness, and job satisfaction.</li>
         </ul>
-</div>
+
+        <h1 class="text-md font-bold mb-4">Environmental Sustainability:</h1>
+        <ul class="list-disc ml-6 mb-4">
+            <li>Develop and implement sustainable quarrying practices to minimize environmental impact.</li>
+            <li>Set targets for land reclamation and biodiversity restoration efforts.</li>
+        </ul>
+
+        <h1 class="text-md font-bold mb-4">Market Expansion and Diversification:</h1>
+        <ul class="list-disc ml-6 mb-4">
+            <li>Identify new markets and customers to expand your customer base.</li>
+            <li>Explore diversification opportunities, such as producing diverse types of stone or offering related services like transportation or custom cutting.</li>
+        </ul>
+
+        <h1 class="text-md font-bold mb-4">Cost Management:</h1>
+        <ul class="list-disc ml-6 mb-4">
+            <li>Reduce operational costs through efficiency improvements and better resource management.</li>
+            <li>Implement a cost-control strategy to maintain profitability, especially during economic downturns.</li>
+        </ul>
+
+        <h1 class="text-md font-bold mb-4">Community Engagement and Relations:</h1>
+        <ul class="list-disc ml-6 mb-4">
+            <li>Build positive relationships with the local community through open communication and community involvement.</li>
+            <li>Address community concerns promptly and transparently to maintain a good public image and minimize potential conflicts.</li>
+        </ul>
+    </div>
+
 
 <div class="container mx-auto mt-8 p-8 bg-white rounded shadow">
 
@@ -105,7 +130,7 @@
                 Ghana. Here are ten critical success factors for PRECISION MASTERS in that regard:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 text-justify">
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Resource Quality and Quantity:</h2>
                 <ul class="list-disc ml-6 mb-2">                      
                     <li>Ensure the quarry has a sustainable and reliable source of high-quality raw materials (e.g., stone,
@@ -113,56 +138,56 @@
                     </ul>
                 </div>
 
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Efficient Operations:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Optimize quarry operations to extract and process resources efficiently while minimizing waste.</li>
                         <li>Continuously improve production processes to reduce costs and increase productivity.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Safety and Health Compliance:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Maintain a strong commitment to safety by complying with industry regulations and best practices.</li>
                         <li>Invest in safety training and equipment to protect employees and visitors.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Market Demand Analysis:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Regularly assess market demand for your products and adjust production accordingly.</li>
                         <li>Stay informed about industry trends and customer preferences to remain competitive.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Quality Control:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Maintain consistent product quality to meet or exceed customer expectations</li>
                         <li>Implement robust quality control processes and standards.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Cost Management:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Monitor and control operational costs to ensure profitability.</li>
                         <li>Look for opportunities to reduce costs without compromising quality or safety.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Customer Relationships:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Build and maintain strong relationships with customers, contractors, and suppliers</li>
                         <li>Provide excellent customer service and respond promptly to inquiries and concerns.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Technology and Equipment:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Invest in modern machinery and technology to enhance efficiency and productivity</li>
                         <li>Stay up to date with industry innovations and adopt relevant advancements.</li>
                     </ul>
                 </div>
-                <div class="mb-1">
+                <div class="mb-1 bg-white p-3 shadow-lg">
                     <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Technology and Equipment:</h2>
                     <ul class="list-disc ml-6 mb-2">
                         <li>Engage with the local community and stakeholders to address concerns and maintain a positive reputation.</li>

@@ -7,8 +7,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             <div class=" p-4">
                 <div class="px- py-4">
-                    <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                        <h1 class="text-xl text-center  bg-black text-white">
+                    <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                        <h1 class="text-xl text-justify bg-black text-white">
                         <span class="bg-gray-600 p-3 font-semibold">M</span>aterial Delivery</h1>
                     </div>
                     <p class="text-gray-700 pb-8 text-base">
@@ -16,8 +16,8 @@
                     </p>
                 </div>
                 <div class="px-1 py-4">
-                <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                    <h1 class="text-xl text-center  bg-black text-white">
+                <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                    <h1 class="text-xl text-justify bg-black text-white">
                     <span class="bg-gray-600 p-3 font-semibold">L</span>and Reclamation</h1>
                 </div>
                 <p class="text-gray-700   pb-8 text-base">
@@ -26,8 +26,8 @@
                 </p>
                 </div>
                 <div class="px-1 py-4">
-                <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                    <h1 class="text-xl text-center  bg-black text-white">
+                <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                    <h1 class="text-xl text-justify bg-black text-white">
                     <span class="bg-gray-600 p-3 font-semibold">S</span>ustainability Initiatives</h1>
                 </div>
                 <p class="text-gray-700  pb-8 text-base">
@@ -41,8 +41,8 @@
             </div>
             <div class=" p-4">
                 <div class="px-1 py-4">
-                <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                    <h1 class="text-xl text-center  bg-black text-white">
+                <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                    <h1 class="text-xl text-justify bg-black text-white">
                     <span class="bg-gray-600 p-3 font-semibold">C</span>ustom Blending</h1>
                 </div>               
                 <p class="text-gray-700  pb-8 text-base">
@@ -50,8 +50,8 @@
                 </p>
                 </div>
                 <div class="px-1 py-4">
-                <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                    <h1 class="text-xl text-center  bg-black text-white">
+                <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                    <h1 class="text-xl text-justify bg-black text-white">
                     <span class="bg-gray-600 p-3 font-semibold">C</span>onsultation and Support</h1>
                 </div>                 
                 <p class="text-gray-700 pb-8 text-base">
@@ -61,8 +61,8 @@
                 </p>
                 </div>
                 <div class="px-1 py-4">
-                <div class="font-medium text-xl mb-5 text-center shadow-lg">
-                    <h1 class="text-xl text-center  bg-black text-white">
+                <div class="font-medium text-xl mb-5 text-justify shadow-lg">
+                    <h1 class="text-xl text-justify bg-black text-white">
                     <span class="bg-gray-600 p-3 font-semibold">B</span>ulk Material Sales</h1>
                 </div> 
                 <p class="text-gray-700  pb-8 text-base">

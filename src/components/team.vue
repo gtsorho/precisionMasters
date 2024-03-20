@@ -43,13 +43,13 @@
         :alt="`Image of ${selectedDirector.name}`"
         class="w-68  shadow-2xl border-amber-400  border-4 mx-auto rounded-full h-80 object-top object-cover"
       />
-      <div class="px-6 py-4">
-        <h3 class="text-lg leading-6 font-medium text-gray-900">
+      <div class="px-6 py-4 bg-black">
+        <h3 class="text-lg leading-6 font-medium text-white">
           {{ selectedDirector.name }}
         </h3>
       </div>
       <div class="prose max-w-screen-md p-6" style="max-height: 70vh;">
-        <div v-html="selectedDirector.details"></div>
+        <div class="text-justify" v-html="selectedDirector.details"></div>
               <div class="bg-gray-50 px-4 mt-12 mb-5 py-1 sm:px-6 flex items-center justify-end p-4 gap-4 flex-row">
         <button @click="closeModal" type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-black text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
           Close
