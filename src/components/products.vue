@@ -27,9 +27,9 @@
     <div class=" flex items-center justify-center ">
       <div class="container mx-auto p-4 text-center">
         <h1 class="text-2xl underline text-center py-8">Products</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8">
           <!-- Replace this with your grid items -->
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/Crushed Stone.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -41,7 +41,7 @@
                 </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/Gravel.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -52,7 +52,7 @@
                 The stone material employed for driveways, walkways, and as a base for concrete and asphalt plays a crucial role in construction. It provides a durable foundation for surfaces, ensuring stability and longevity in these essential components of infrastructure.              </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/sand.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -64,7 +64,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/fill-dirt.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -76,7 +76,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/Riprap.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -88,7 +88,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/Ballast.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -100,7 +100,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/quary dust.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">
@@ -111,7 +111,7 @@
                 Quarry dust, also known as stone dust or crusher dust, is a by-product of quarrying operations. This material is composed of fine, silty particles and is commonly utilized in construction for various applications. Here are some key points about quarry dust              </p>
             </div>
           </div> 
-          <div class="bg-black shadow-lg w-5/6 mx-auto">
+          <div class="bg-black shadow-lg h-full w-5/6 mx-auto">
             <img src="../assets/products/sand-image.jpg" alt="Placeholder Image" class="w-full h-52  object-cover">
             <div class="px-1 py-4">
                 <div class="font-medium text-xl mb-5 text-center">

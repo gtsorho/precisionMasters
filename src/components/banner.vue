@@ -11,7 +11,7 @@
       </h1> -->
       <h1 class="lg:text-8xl text-4xl  text-center mb-5 font-medium">
         <span class="bg-black  my-2 px-3 py-3 inline-block"> 
-          <span class="bg-yellow-500 uppercase text-slate-500">P</span>RECISI<span><img src="../assets/favicon.png" class="inline w-24 "></span>N 
+          <span class="bg-yellow-500 uppercase text-slate-500">P</span>RECISI<span><img src="../assets/favicon.png" class="inline w-1/6 "></span>N 
         </span> 
         <span class="bg-black  px-3 mx-2 pt-3 pb-5  inline-block">
           <span class="bg-yellow-500 text-slate-500">M</span>ASTERS 
