@@ -28,18 +28,18 @@
         <div class="text-justify my-9 mr-5 w-full md:w-1/2">
             <div class="my-5 py-5">
                 <h2 class="text-lg font-bold bg-black w-28 px-4 text-yellow-500">VISION</h2>
-                <p>
+                <p class="text-md">
                     At Precision Masters, our vision is to lead the industry as the premier provider of high-quality quarry mining solutions, establishing the standard for excellence and innovation. We aspire to be the preferred choice for customers seeking quality and affordable stones. Our commitment lies in precision mining, promoting a sustainable environment, and prioritizing the welfare of our employees. Serving private individuals, businesses, and government entities, we aim to uphold the highest standards of excellence and responsibility in our quarry mining operations.
                 </p>
             </div>
             <div>
                 <h2 class="text-lg font-bold bg-black w-28 px-4 text-yellow-500">MISSION</h2>
-                <p>
+                <p class="text-md">
                     At PRECISION MASTERS, our mission is to deliver cutting-edge quarry mining services and products that exceed customer expectations. We prioritize safety, sustainability, and environmental responsibility, aiming to be the preferred choice for all quarry mining needs. Through a commitment to continuous improvement and operational excellence, we foster enduring partnerships with clients, employees, and communities. Our dedicated team of professionals, equipped with state-of-the-art technology, ensures superior results while upholding a culture of innovation and collaboration. As responsible stewards of the environment, we minimize our ecological footprint and prioritize safety, contributing to a greener and more sustainable future. Join us in our mission to redefine excellence in quarry mining with precision, sustainability, and safety at the forefront.           
                 </p>
             </div>
         </div>
-        <video autoplay loop muted class=" w-full md:w-4/6">
+        <video autoplay loop muted class=" w-full md:w-1/2">
             <source src="../assets/video.mp4"  type="video/mp4">
         </video>
     </div>
