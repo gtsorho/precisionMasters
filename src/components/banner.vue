@@ -39,5 +39,5 @@ export default {
 .backdrop{
    background-position: 50% 80%;
    background-size: cover;
-  background-image: linear-gradient(to top, rgb(223 237 202 / 45%), rgb(20, 20, 20)), url('https://roshankashmir.net/wp-content/uploads/2023/02/Hero.jpg')}
+   background-image: linear-gradient(to top, rgb(223 237 202 / 45%), rgb(20, 20, 20)), url('https://roshankashmir.net/wp-content/uploads/2023/02/Hero.jpg')}
 </style>
