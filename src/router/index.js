@@ -4,6 +4,7 @@ import Careers from '../views/careers.vue'
 import Info from '../views/info.vue'
 import Health from '../views/health.vue'
 import Financial from '../views/financial.vue'
+import Sustainability from '../views/sustainability.vue'
 
 
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/info',
       name: 'info',
       component: Info
+    },
+    {
+      path: '/sustainability',
+      name: 'sustainability',
+      component: Sustainability
     },
     {
       path: '/health',

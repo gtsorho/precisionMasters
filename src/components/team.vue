@@ -43,8 +43,8 @@
         :alt="`Image of ${selectedDirector.name}`"
         class="w-68  shadow-2xl border-amber-400  border-4 mx-auto rounded-full h-80 object-top object-cover"
       />
-      <div class="px-6 py-4 bg-black">
-        <h3 class="text-lg leading-6 font-medium text-white">
+      <div class="px-6 py-2 bg-black  text-center">
+        <h3 class="text-lg leading-6 mx-auto p-1 font-medium bg-yellow-500 w-fit text-white">
           {{ selectedDirector.name }}
         </h3>
       </div>
@@ -67,7 +67,7 @@ export default {
     return {
       directors: [
         { 
-          name: 'Patrick Kweku Anti-Brentuo Owusu', 
+          name: 'Mr. Patrick Kweku Anti-Brentuo Owusu', 
           image: new URL(`../assets/team/patrick.jpg`,  import.meta.url).href , 
           details:  `<p class="pt-5">Patrick Kweku Anti-Brentuo Owusu, affectionately known as PAT, is a highly motivated professional specializing in corporate governance and risk management. His career is focused on Internal Audit and the Quality Assurance of Internal Audit systems. With a wealth of experience, PAT has conducted quality assurance in various areas such as treasury and financial reporting, credit risk, financial crime, technology and IT systems, security, and markets within the UK banking sector.</p>
                         <p class="pt-5">PAT possesses excellent knowledge and appreciation of forensic accounting, finance, accounting procedures, and security & safety issues. Demonstrating a proactive approach, he has successfully driven efficiency through process improvement, implementing controls to enhance performance with a positive attitude.</p>
@@ -76,7 +76,7 @@ export default {
                         <p class="pt-5">His academic achievements include an HND in Accountancy from the Cape Coast Technical University, a BA in Accounting and Finance from the University of Derby, and an MSc in Forensic Accounting from the University of Portsmouth. PAT's commitment to continuous learning and professional development underscores his dedication to making a lasting impact in strengthening assurance and control processes.` 
         },
         {
-          name: 'Parmenas Kwesi Appiah-Adjei', 
+          name: 'Mr. Parmenas Kwesi Appiah-Adjei', 
           image: new URL('../assets/team/kwesi.jpg',  import.meta.url).href, 
           details: `<p class="pt-5">Parmenas Kwesi Appiah-Adjei, a seasoned professional, holds numerous qualifications, including an ICA (GH) from the Institute of Chartered Accountants (Ghana), IoD-G (Institute of Directors Ghana) membership, and CIT-(GH) membership from the Chartered Institute of Taxation – Ghana. He is also pursuing studies with the Chartered Institute of Taxation UK. Additionally, Parmenas holds an MBA in Accounting and a Bachelor of Commerce from the University of Cape Coast, Ghana.</p>
                     <p class="pt-5">Currently enrolled in the LLB program at Wisconsin International University College, Parmenas boasts a wealth of experience, particularly in the Ghanaian banking sector. With five years of service in various capacities at Procredit Savings & Loans (later acquired by Fidelity Bank Ghana), Parmenas transitioned to HPW Fresh & Dry Ltd in September 2012. This Swiss multinational company, headquartered in Switzerland with plants in Ghana, Cote D'Ivoire, and Kenya, operates in the manufacturing sector, specifically the Fruit Processing sub-sector under the Ghana Free Zones Regime.</p>
@@ -85,7 +85,7 @@ export default {
                   `
         },
         { 
-          name: 'Richard Appiah Samah', 
+          name: 'Mr. Richard Appiah Samah', 
           image:  new URL('../assets/team/richard.jpg',  import.meta.url).href, 
           details: `<p class="pt-5">RICHARD APPIAH SAMAH IS A very determined, highly reliable and enthusiastic young man with extensive experience in Finance and Management Accounting in the private sector. Richard is also well-versed in internal control systems. He has excellent knowledge, analytical skills, and sound systems and interpersonal skills. Richard holds a Master of Business Administration (MBA) in Accounting and a Bachelor of Business Administration (BBA) in Accounting, all from the Ghana Institute of Public and Business Administration(GIMPA), as well as a Higher National Diploma (HND) in Accounting from Cape Coast Technical University.</p>
                     <p class="pt-5">He has some remarkable experience in the Automotive Industry after successfully establishing a world-class car rental and sales company with international affiliation to Kayak plc in the UAE and Orbitz in the USA as a local Partner. The exemplary leadership skills and professionalism in managing these companies have led to numerous recognitions in the automotive space, both locally and internationally, that have led to the expansion and innovative ways of renting a car in Ghana.</p>
@@ -93,7 +93,7 @@ export default {
                     ` 
         },
         { 
-          name: 'Eric Mensah', 
+          name: 'Mr. Eric Mensah', 
           image: new URL('../assets/team/eric.jpg',  import.meta.url).href , 
           details: `<p class="pt-5">Mr. Eric Mensah is a highly experienced engineer at the Ghana Grid Company Limited (GRIDCo), where he plays an instrumental role in the Protection and Control section. With an illustrious career spanning several years in the energy sector of Ghana's industry, Mr. Eric is a true visionary in electrical and electronic engineering. He is also a member of the Ghana Institute of Electrical/Electronics Engineers.</p>
                     <p class="pt-5">Mr. Eric earned a bachelor's in electrical/electronic engineering from Kwame Nkrumah University of Science and Technology in 2018. In 2005, he also completed a Higher National Diploma from the Cape Coast Technical University. He has worked for about sixteen (16) years in the energy sector of Ghana's industry, and over the years, he has played a significant role in the operation and management of the high-voltage transmission system. Most of this has been accomplished by him in Northern Ghana.</p>
@@ -101,7 +101,7 @@ export default {
                     ` 
         },
         {
-          name: 'Stephen Danso Koranteng', 
+          name: 'Mr. Stephen Danso Koranteng', 
           image: new URL('../assets/team/danso.jpg',  import.meta.url).href, 
           details: `<p class="pt-5">Stephen Danso Koranteng is a trained and qualified Herbal Doctor with excellent herbal treatment for all kinds of health challenges. Excellent interpersonal and communication skills, meticulous and hardworking, team player spirit, warm personality, excellent community relations, positive-minded and resultoriented, creating the preferred working technique for institutions, which employs professionalism and innovation to provide quality products and services that best satisfy the need or the goal and objectives of the management of the organizations and customers.</p>
                     <p class="pt-5">Mr. SK Donso has internal relationship management expertise with all clients and a broad business awareness and understanding of operations in herbal treatments, management accounting, finance, economics, inventory control and financial accounting. He has management expertise in strategic planning, financial planning, inventory management, and project research management. Mr. Danso has a team player spirit, affable character, ownership mentality and analytical approach towards problem-solving, possession of the can-do attitude/ spirit and full ambition to develop a career as a world team leader and team player spirit in applying professional knowledge and skills.</p>
