@@ -24,8 +24,6 @@ export default {
     components:{
         About
     },
-    // const pdfUrl = '../assets/files/PRECISION MASTERS LTD EMPLOYMENT FRAUD STATEMENT-2.pdf';
-
     methods: {
 async downloadPDF() {
         const relativeFilePath  = 'https://precisionmasters.org/statement.pdf';
