@@ -5,7 +5,7 @@
                     We at Precision Masters are committed to upholding the highest standards of integrity,
                     transparency, and fairness in our recruitment and employment practices. It has come to our
                     attention that individuals and organisations may falsely claim to represent PRECISION
-                    MASTERS and offer employment opportunities in exchange for financial gain. For more details read our <button @click="downloadFile" class="text-yellow-500 hover:text-yellow-300">Employment Fraud Statement<i class="bi bi-file-earmark-arrow-down-fill"></i></button>
+                    MASTERS and offer employment opportunities in exchange for financial gain. For more details read our <button @click="downloadPDF" class="text-yellow-500 hover:text-yellow-300">Employment Fraud Statement<i class="bi bi-file-earmark-arrow-down-fill"></i></button>
                 </p>
                 
             </div>
@@ -24,16 +24,21 @@ export default {
     components:{
         About
     },
+    // const pdfUrl = '../assets/files/PRECISION MASTERS LTD EMPLOYMENT FRAUD STATEMENT-2.pdf';
+
     methods: {
-    downloadFile() {
-      const fileUrl = '../assets/files/PRECISION MASTERS LTD EMPLOYMENT FRAUD STATEMENT-2.pdf';
-      
-      const anchor = document.createElement('a');
-      anchor.href = fileUrl;
-      anchor.download = 'EMPLOYMENT FRAUD STATEMENT.pdf';
-      
-      anchor.click();
-    }
+async downloadPDF() {
+        const relativeFilePath  = 'https://precisionmasters.org/statement.pdf';
+
+      const link = document.createElement('a');
+
+      link.href = relativeFilePath;
+
+      link.download = 'EMPLOYMENT FRAUD STATEMENT.pdf';
+
+      link.click();
+}
+
   }
 }
 </script>
