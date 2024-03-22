@@ -1,52 +1,63 @@
 <template>
     <About/>
-    <div class="container mx-auto bg-black text-white p-3 mt-8">
-        <h2 class="text-lg font-bold text-center bg-yellow-500 px-4 text-white">OBJECTIVES</h2>
+        <section class="container mx-auto mt-8 p-8 text-justify">
+            <h2 class="text-xl px-2 my-4 font-medium bg-black text-white  py-2"> 
+                <span class="bg-yellow-600 ml-5 p-3">OBJECTIVES</span> 
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 text-justify">
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Production Optimization:</h2>
+                    <ul class="list-disc ml-6 mb-2">                      
+                        <li>Increase quarry production efficiency to meet growing demand.</li>
+                        <li>Implement advanced machinery and technology for better resource extraction and processing.</li>
+                    </ul>
+                </div>
 
-        <h1 class="text-md font-bold mb-4">Production Optimization:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Increase quarry production efficiency to meet growing demand.</li>
-            <li>Implement advanced machinery and technology for better resource extraction and processing.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Quality Control:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Maintain consistently high-quality products by setting and adhering to stringent quality control standards.</li>
-            <li>Continuously monitor and improve product specifications to meet customer expectations.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Safety, Health, and Employee Wellbeing:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Achieve and maintain a zero-accident workplace through rigorous safety training and protocols.</li>
-            <li>Conduct regular safety audits and risk assessments to identify and mitigate potential hazards.</li>
-            <li>Foster a culture of continuous learning and professional development among employees, aiming to enhance skills, safety awareness, and job satisfaction.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Environmental Sustainability:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Develop and implement sustainable quarrying practices to minimize environmental impact.</li>
-            <li>Set targets for land reclamation and biodiversity restoration efforts.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Market Expansion and Diversification:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Identify new markets and customers to expand your customer base.</li>
-            <li>Explore diversification opportunities, such as producing diverse types of stone or offering related services like transportation or custom cutting.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Cost Management:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Reduce operational costs through efficiency improvements and better resource management.</li>
-            <li>Implement a cost-control strategy to maintain profitability, especially during economic downturns.</li>
-        </ul>
-
-        <h1 class="text-md font-bold mb-4">Community Engagement and Relations:</h1>
-        <ul class="list-disc ml-6 mb-4">
-            <li>Build positive relationships with the local community through open communication and community involvement.</li>
-            <li>Address community concerns promptly and transparently to maintain a good public image and minimize potential conflicts.</li>
-        </ul>
-    </div>
-
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Quality Control:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Maintain consistently high-quality products by setting and adhering to stringent quality control standards.</li>
+                        <li>Continuously monitor and improve product specifications to meet customer expectations.</li>
+                    </ul>
+                </div>
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Safety, Health, and Employee Wellbeing:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Achieve and maintain a zero-accident workplace through rigorous safety training and protocols.</li>
+                        <li>Conduct regular safety audits and risk assessments to identify and mitigate potential hazards.</li>
+                        <li>Foster a culture of continuous learning and professional development among employees, aiming to enhance skills, safety awareness, and job satisfaction.</li>
+                    </ul>
+                </div>
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Environmental Sustainability:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Develop and implement sustainable quarrying practices to minimize environmental impact.</li>
+                        <li>Set targets for land reclamation and biodiversity restoration efforts.</li>
+                    </ul>
+                </div>
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Market Expansion and Diversification:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Identify new markets and customers to expand your customer base.</li>
+                        <li>Explore diversification opportunities, such as producing diverse types of stone or offering related services like transportation or custom cutting.</li>
+                    </ul>
+                </div>
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Cost Management:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Reduce operational costs through efficiency improvements and better resource management.</li>
+                        <li>Implement a cost-control strategy to maintain profitability, especially during economic downturns.</li>
+                    </ul>
+                </div>
+                <div class="mb-1 bg-white p-3 shadow-lg">
+                    <h2 class="text-md bg-black text-white px-2 w-fit font-bold mb-2">Community Engagement and Relations:</h2>
+                    <ul class="list-disc ml-6 mb-2">
+                        <li>Build positive relationships with the local community through open communication and community involvement.</li>
+                        <li>Address community concerns promptly and transparently to maintain a good public image and minimize potential conflicts.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
 <div class="container mx-auto mt-8 p-8 bg-white rounded shadow">
 
