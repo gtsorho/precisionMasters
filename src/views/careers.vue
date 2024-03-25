@@ -1,15 +1,46 @@
 <template>
-                <div class="text-justify text-sm py-3 shadow-lg bg-black text-slate-200 md:px-24">
-                    <p class="">
-                        Joining the team at Precision Masters offers numerous benefits and opportunities for professional growth and personal development. Here are some compelling reasons why you should consider becoming an employee <button @click="isFraud = false; showModal = true" class="text-yellow-500 hover:text-yellow-300"> Why Work with Us<i class="bi bi-file-earmark-arrow-down-fill"></i></button>
-                    </p>
-                </div>
+        <div class="text-justify text-sm py-3 shadow-lg bg-black text-slate-200 md:px-24">
+            <p class="">
+                Joining the team at Precision Masters offers numerous benefits and opportunities for professional growth and personal development. Here are some compelling reasons why you should consider becoming an employee <button @click="isFraud = false; showModal = true" class="text-yellow-500 hover:text-yellow-300"> Why Work with Us<i class="bi bi-file-earmark-arrow-down-fill"></i></button>
+            </p>
+        </div>
         <section  class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 text-justify">
             <div>
                 <img src="../assets/Job offers-bro.png" alt="">    
             </div>  
             <div class="flex items-center mx-auto">
-               <p class="text-white bg-black px-14 py-5 font-medium text-md">(0) Jobs Found</p> 
+                <div class=" h-full">
+                    <div class="my-5 shadow-md h-1/2 flex items-center">
+                        <p class="text-white my-auto bg-black w-full px-14 py-5 font-medium text-md">(0) Jobs Found</p> 
+                    </div>
+                    <div class="h-1/2">
+                        <form class="w-76 max-w-xl shadow-lg p-5" ref="form"  @submit.prevent="sendEmail()">
+                            <div class="flex flex-wrap -mx-3">
+                                <div class="w-full px-3">
+                                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="subject">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-2">
+                                <div class="w-full  px-3 mb-6 md:mb-0">
+                                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" name="message" placeholder="Albuquerque"></textarea>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-2">
+                                <div class="w-full  px-3 mb-6 md:mb-0">
+                                    <input type="file" id="myFile" @change="validateFile()" required  ref="file" class="inline-flex justify-center w-full   shadow-sm px-4 py-1 bg-gray-200 text-xs font-medium text-black  focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-400   sm:text-sm" name="filename">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-yellow-600 text-xs" >{{msg}}</p>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-2">
+                                <div class="w-full  px-3 mb-6 md:mb-0">
+                                    <button type="submit" class="bg-yellow-500 text-white  hover:bg-black px-6 mt-3 py-1 "> Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -24,7 +55,7 @@
                     </h3>
                 </div>
                 <div class=" p-4" v-else>
-                    <h2 class="text-xl px-2 my-4 font-extrabold  bg-black text-white py-4">Why Work With <span class="bg-yellow-500 font-bold p-5">Us</span> </h2>
+                    <h2 class="text-xl px-2 my-4 font-extrabold  bg-black text-white py-4">Why Work With<span class="bg-yellow-500 font-bold p-5">Us</span> </h2>
                 </div>
                 <div class=" text-justify px-7 mt-4" v-html="isFraud ? fraudAlert : whyWork"></div>
             </div>
@@ -32,10 +63,10 @@
                 
                 <div class="bg-gray-50 px-4 mb-5 py-1 sm:px-6 flex items-center justify-end p-4 gap-4 flex-row">
                     <button @click="downloadPDF" v-if="isFraud"  type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-yellow-500 text-base font-medium hover:bg-yellow-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
-                    Download <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        Download <i class="bi bi-file-earmark-arrow-down-fill"></i>
                     </button>
                     <button @click="closeModal" type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-black text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
-                    Close
+                        Close
                     </button>
                 </div>
             </div>
@@ -53,6 +84,7 @@ export default {
         return {
             showModal:false,
             isFraud:false,
+            msg:"",
             fraudAlert:` At PRECISION MASTERS, we are committed to upholding the highest standards of integrity,
                         transparency, and fairness in our recruitment and employment practices. It has come to our
                         attention that individuals and organisations may falsely claim to represent PRECISION
@@ -150,11 +182,52 @@ export default {
         closeModal() {
             this.showModal = false;
         },
+        sendEmail() {
+            emailjs
+                .sendForm('precision_masters', 'ps_email', this.$refs.form, {
+                publicKey: 'CWJayqqHh4HTBzA14', 
+                })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error) => {
+                        console.log('FAILED...', error);
+                    },
+                );
+        },
+        validateFile() {
+            var fileInput = this.$refs.file;
+            var file = fileInput.files[0];
+            var fileSize = file.size;
+            var fileType = file.type;
+
+            if (fileType !== 'application/pdf') {
+                this.msg = 'Please select a PDF file.'
+                setInterval(() => {
+                    this.msg = ''
+                    fileInput.value = '';
+                }, 3500);
+            }
+
+            if (fileSize > 2 * 1024 * 1024) { 
+                this.msg = 'File size exceeds 2MB.'
+                setInterval(() => {
+                    this.msg = ''
+                    fileInput.value = '';
+                }, 3500);
+            }
+
+            return true;
+        }
     }
 }
 </script>
 <style>
     .br{
         margin-block: 10px;
+    }
+    .w-76{
+        width: 28rem;
     }
 </style>
