@@ -15,19 +15,20 @@
                     </div>
                     <div class="h-1/2">
                         <form class="w-76 max-w-xl shadow-lg p-5" ref="form"  @submit.prevent="sendEmail()">
+                            <label for="" class="font-bold text-start ps-1 w-full block py-4 text-slate-700">Send Resume </label>
                             <div class="flex flex-wrap -mx-3">
                                 <div class="w-full px-3">
-                                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="subject">
+                                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="Subject">
                                 </div>
                             </div>
                             <div class="flex flex-wrap -mx-3 mb-2">
                                 <div class="w-full  px-3 mb-6 md:mb-0">
-                                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" name="message" placeholder="Albuquerque"></textarea>
+                                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" name="message" placeholder="Send us a message"></textarea>
                                 </div>
                             </div>
                             <div class="flex flex-wrap -mx-3 mb-2">
                                 <div class="w-full  px-3 mb-6 md:mb-0">
-                                    <input type="file" id="myFile" @change="validateFile()" required  ref="file" class="inline-flex justify-center w-full   shadow-sm px-4 py-1 bg-gray-200 text-xs font-medium text-black  focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-400   sm:text-sm" name="filename">
+                                    <input type="file" id="myFile" @change="validateFile()" required  ref="file" class="inline-flex justify-center w-full   shadow-sm px-4 py-1 bg-gray-200 text-xs font-medium text-black  focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-400   sm:text-sm" name="    ">
                                 </div>
                             </div>
                             <div>
