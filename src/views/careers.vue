@@ -79,9 +79,9 @@
             <div class=" max-w-screen-md" style="max-height: 70vh;">
                 
                 <div class="bg-gray-50 px-4 mb-5 py-1 sm:px-6 flex items-center justify-end p-4 gap-4 flex-row">
-                    <button @click="downloadPDF" v-if="isFraud"  type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-yellow-500 text-base font-medium hover:bg-yellow-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
+                    <!-- <button @click="downloadPDF" v-if="isFraud"  type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-yellow-500 text-base font-medium hover:bg-yellow-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
                         Download <i class="bi bi-file-earmark-arrow-down-fill"></i>
-                    </button>
+                    </button> -->
                     <button @click="closeModal" type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-1 bg-black text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400  sm:w-auto sm:text-sm">
                         Close
                     </button>
