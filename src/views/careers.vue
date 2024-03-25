@@ -9,7 +9,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" :d="workPoint.isOpen ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'"/>
                                 </svg>
                             </button>
-                            <h1 class='text-2xl font-bold bg-black text-white'>Why Work With Us <i class="bi bi-lightbulb text-yellow-500"></i></h1>
+                            <h1 class='text-lg font-bold bg-black text-white'>Why Work With Us <i class="bi bi-lightbulb text-yellow-500"></i></h1>
                         </div>
                         <p v-show="workPoint.isOpen" class="pl-12 pr-8 py-2 text-justify text-white h-72 overflow-y-auto" v-html="workPoint.description"></p>
                     </div>
