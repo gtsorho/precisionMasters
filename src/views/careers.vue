@@ -1,21 +1,37 @@
 <template>
         <div class="text-justify text-sm py-3 shadow-lg bg-black text-slate-200 md:px-24">
-            <p class="">
-                Joining the team at Precision Masters offers numerous benefits and opportunities for professional growth and personal development. Here are some compelling reasons why you should consider becoming an employee <button @click="isFraud = false; showModal = true" class="text-yellow-500 hover:text-yellow-300"> Why Work with Us<i class="bi bi-file-earmark-arrow-down-fill"></i></button>
-            </p>
+            <div class='md:w-5/6 w-full   mx-auto bg-yellow-500 rounded-lg shadow-xl'>
+                <div class=' space-y-1'>
+                    <div v-for="(workPoint, index) in workPoints" :key="index" class='border-b transition duration-300 bg-black ease-in-out transform hover:scale-100'>
+                        <div @click="toggleAnswer(index)"  class='flex items-center text-white'>
+                            <button class='w-10 h-10 mr-2 p-1 '>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" :d="workPoint.isOpen ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'"/>
+                                </svg>
+                            </button>
+                            <h1 class='text-2xl font-bold bg-black text-white'>Why Work With Us <i class="bi bi-lightbulb text-yellow-500"></i></h1>
+                        </div>
+                        <p v-show="workPoint.isOpen" class="pl-12 pr-8 py-2 text-justify text-white h-72 overflow-y-auto" v-html="workPoint.description"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <p class="">
+                Joining the team at Precision Masters offers numerous benefits and opportunities for professional growth and personal development. Here are some compelling reasons why you should consider becoming an employee <button @click="isFraud = false; showModal = true" class="text-yellow-500 hover:text-yellow-300"> Why Work with Us</button>
+            </p> -->
         </div>
         <section  class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 text-justify">
             <div>
                 <img src="../assets/Job offers-bro.png" alt="">    
             </div>  
             <div class="flex items-center mx-auto">
-                <div class=" h-full">
+                <div class="">
                     <div class="my-5 shadow-md h-1/2 flex items-center">
                         <p class="text-white my-auto bg-black w-full px-14 py-5 font-medium text-md">(0) Jobs Found</p> 
                     </div>
                     <div class="h-1/2">
                         <form class="w-76 max-w-xl shadow-lg p-5" ref="form"  @submit.prevent="sendEmail()">
-                            <label for="" class="font-bold text-start ps-1 w-full block py-4 text-slate-700">Send Resume </label>
+                            <label for="" class="font-bold text-start ps-1 w-full block py-4 text-slate-700">Send Resume</label>
                             <div class="flex flex-wrap -mx-3">
                                 <div class="w-full px-3">
                                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="Subject">
@@ -86,7 +102,55 @@ export default {
             showModal:false,
             isFraud:false,
             msg:"",
-            fraudAlert:` At PRECISION MASTERS, we are committed to upholding the highest standards of integrity,
+            workPoints:[
+                {
+                    title: "Dynamic Work Environment",
+                    description:  `Joining the team at Precision Masters offers numerous benefits and opportunities for
+                        professional growth and personal development. Here are some compelling reasons why you
+                        should consider becoming an employee:<br>
+                        <br>
+                        <h4 class="font-bold inline"> 1. Dynamic Work Environment:</h4> At Precision Masters, you'll be part of a dynamic and
+                        innovative team that is passionate about quarrying and committed to excellence. Our
+                        work environment fosters collaboration, creativity, and continuous learning, providing
+                        you with exciting challenges and opportunities to expand your skills and knowledge.<br>
+                        <h4 class="font-bold inline"> 2. Opportunities for Advancement:</h4> We believe in investing in our employees and
+                        providing opportunities for career advancement and progression. Whether you're just
+                        starting your career in the quarrying industry or seeking to take the next step in your
+                        professional journey, Precision Masters offers a supportive and merit-based culture that
+                        rewards hard work, initiative, and achievement.<br>
+                        <h4 class="font-bold inline"> 3. Training and Development:</h4> We are committed to helping our employees reach their
+                        full potential through comprehensive training and development programs. From on-
+                        the-job training and mentorship to specialised workshops and courses, we provide the
+                        resources and support you need to enhance your skills, broaden your expertise, and
+                        advance your career.<br>
+                        <h4 class="font-bold inline"> 4. Competitive Compensation and Benefits: </h4>Precision Masters offers competitive
+                        compensation packages that reflect the value and contribution of our employees. In
+                        addition to competitive salaries, we provide a comprehensive benefits package that
+                        includes health insurance, retirement savings plans, paid time off, and other perks and
+                        incentives designed to support your overall well-being and financial security.<br>
+                        <h4 class="font-bold inline"> 5. Commitment to Diversity and Inclusion:</h4> We believe that diversity and inclusion are
+                        essential for driving innovation, fostering creativity, and building a strong, resilient team.
+                        At Precision Masters, we embrace diversity in all its forms and are committed to
+                        creating an inclusive work environment where all employees feel valued, respected,
+                        and empowered to contribute their unique perspectives and talents.<br>
+                        <h4 class="font-bold inline"> 6. Meaningful Work: </h4>Quarrying plays a vital role in supporting infrastructure
+                        development, construction projects, and economic growth. As a member of the
+                        Precision Masters team, you'll have the opportunity to make a meaningful impact by
+                        contributing to important projects that shape communities, improve lives, and drive
+                        sustainable development.<br>
+                        <h4 class="font-bold inline"> 7. Corporate Social Responsibility: </h4>Precision Masters is committed to corporate social
+                        responsibility and environmental stewardship. By joining our team, you'll have the
+                        opportunity to participate in initiatives and projects that promote sustainability,
+                        community engagement, and responsible quarrying practices, making a positive
+                        difference in the world around you.<br><br>
+                        Joining the team at Precision Masters offers a rewarding and fulfilling career experience
+                        characterised by growth, opportunity, and purpose. If you're passionate about quarrying and
+                        eager to contribute to a dynamic and forward-thinking organisation, we invite you to explore
+                        career opportunities with us.`,
+                    isOpen: false
+                },
+            ],
+            fraudAlert:`At PRECISION MASTERS, we are committed to upholding the highest standards of integrity,
                         transparency, and fairness in our recruitment and employment practices. It has come to our
                         attention that individuals and organisations may falsely claim to represent PRECISION
                         MASTERS and offer employment opportunities in exchange for financial gain. We take any
@@ -220,6 +284,15 @@ export default {
             }
 
             return true;
+        },
+         toggleAnswer(index) {
+            this.workPoints.forEach((workPoint, i) => {
+                if (i !== index) {
+                    workPoint.isOpen = false;
+                }
+            });
+
+            this.workPoints[index].isOpen = !this.workPoints[index].isOpen;
         }
     }
 }

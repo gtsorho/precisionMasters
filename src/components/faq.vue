@@ -63,7 +63,7 @@ data() {
                     answer: 'Our inventory typically includes common sizes like 3/8-inch, 5/8 inch, and 3/4-inch chippings, with the latter often preferred for foundation work. Additionally, we offer road base (0-40mm), boulders, and a variety of other stone sizes to meet diverse project needs. Our team is dedicated to understanding your requirements and providing tailored recommendations to ensure the best product selection for your projects.',
                     isOpen: false
                 }
-  ]
+            ]
         };
     },
     methods: {
