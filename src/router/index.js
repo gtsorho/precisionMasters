@@ -5,6 +5,8 @@ import Info from '../views/info.vue'
 import Health from '../views/health.vue'
 import Financial from '../views/financial.vue'
 import Sustainability from '../views/sustainability.vue'
+import TonnageCalc from '../views/calculator.vue'
+
 
 
 const router = createRouter({
@@ -24,6 +26,11 @@ const router = createRouter({
       path: '/financial',
       name: 'financial',
       component: Financial
+    },
+    {
+      path: '/tonnage',
+      name: 'tonnage',
+      component: TonnageCalc
     },
     {
       path: '/info',
