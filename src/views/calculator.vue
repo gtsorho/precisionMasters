@@ -41,8 +41,9 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-2">
-                    <div class="w-full  px-3 mb-6 md:mb-0">
-                        <button type="submit" class="bg-yellow-500 text-white  hover:bg-black px-6 mt-3 py-1 "> Send Message</button>
+                    <div class="w-full  px-3 mb-6 md:mb-0 flex justify-between">
+                        <button type="submit" class="bg-yellow-600 text-white  hover:bg-black px-6 mt-3 py-1 "> Send Message</button>
+                        <button class="bg-black text-white  hover:bg-yellow-600 px-6 mt-3 py-1 " @click="currentPosition = 'calculate'"> Reset</button>
                     </div>
                 </div>
             </form>

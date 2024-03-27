@@ -64,11 +64,13 @@ export default {
       lengthUnit: 'm',
       height: null,
       heightUnit: 'm',
-      blockType: 'standard',
+      blockType: '6” solid',
       blocksNeeded: null,
       blockTypes: [
-        { name: '6in block', width: 150, length: 400, height: 200 },
-        { name: '5in block', width: 125, length: 400, height: 200 }
+        { name: '6” solid', width: 150, length: 400, height: 195 },
+        { name: '5” Solid', width: 125, length: 400, height: 200 },
+        { name: '6” Hollow', width: 150, length: 400, height: 195 },
+        { name: '5” Hollow', width: 125, length: 400, height: 200 },
       ]
     };
   },
