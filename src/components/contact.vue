@@ -11,7 +11,7 @@
                 <span class="border-2 border-yellow-500 py-3 px-4  rounded-full"><i class="text-yellow-500 fa-solid fa-location-dot"></i></span>
               <div class="font-medium mt-5 text-xl mb-2">Our Address</div>
               <p class="text-gray-200 text-base">
-                House No. 91, Otinshie, East Legon, Accra
+                 Hse No. 91, Otinshie, East Legon, Accra
               </p>
             </div>
           </div>
