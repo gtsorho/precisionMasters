@@ -34,6 +34,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://rr3---sn-vgqsknzl.googlevideo.com/videoplayback?expire=1710299362&ei=gsTwZY2EI6-P2_gP5o2wmAg&ip=181.214.165.66&id=o-ABFBlTYiufQXVlR_gzK0ReWKKwHCEYcoHAZUeR_uq097&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=pP&mm=31%2C29&mn=sn-vgqsknzl%2Csn-vgqsrnsr&ms=au%2Crdu&mv=m&mvi=3&pl=24&initcwndbps=812500&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=505.916&lmt=1642064464602376&mt=1710277508&fvip=1&fexp=24007246&c=ANDROID&txp=5311224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAKi4NmVMdD4esfw9Ox_Cz7U0QKf6TKXj2XJxeOWswWdYAiAhWTcvIZgYPbnjy1kL0ePEZwFH3YSrl7Z0HZwcZe3Deg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRQIhALfUINKW2UtrOd1LE8TzLZbjq-mXlR2oWnAcoW5KCxIOAiBN3CY84Ux-g1v8-Tba5XNwxP0053U_2-xs5Xyj4uCVaA%3D%3D&title=Amazing%20Process%20of%20Making%20Construction%20Aggregate%20%2F%20High%20Technology%20Crushing%20and%20Screening%20Equipment'" 
               src="https://rr3---sn-vgqsknzl.googlevideo.com/videoplayback?expire=1710299362&ei=gsTwZY2EI6-P2_gP5o2wmAg&ip=181.214.165.66&id=o-ABFBlTYiufQXVlR_gzK0ReWKKwHCEYcoHAZUeR_uq097&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=pP&mm=31%2C29&mn=sn-vgqsknzl%2Csn-vgqsrnsr&ms=au%2Crdu&mv=m&mvi=3&pl=24&initcwndbps=812500&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=505.916&lmt=1642064464602376&mt=1710277508&fvip=1&fexp=24007246&c=ANDROID&txp=5311224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAKi4NmVMdD4esfw9Ox_Cz7U0QKf6TKXj2XJxeOWswWdYAiAhWTcvIZgYPbnjy1kL0ePEZwFH3YSrl7Z0HZwcZe3Deg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=APTiJQcwRQIhALfUINKW2UtrOd1LE8TzLZbjq-mXlR2oWnAcoW5KCxIOAiBN3CY84Ux-g1v8-Tba5XNwxP0053U_2-xs5Xyj4uCVaA%3D%3D&title=Amazing%20Process%20of%20Making%20Construction%20Aggregate%20%2F%20High%20Technology%20Crushing%20and%20Screening%20Equipment"
               alt=""
             />
@@ -41,6 +42,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D'" 
               src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
@@ -48,6 +50,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1624084340915-8ef036692deb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D'" 
               src="https://images.unsplash.com/photo-1624084340915-8ef036692deb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
@@ -57,6 +60,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://plus.unsplash.com/premium_photo-1682144351190-9034a7c3b3a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'" 
               src="https://plus.unsplash.com/premium_photo-1682144351190-9034a7c3b3a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -64,6 +68,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1629807472592-2649bfa09f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D'" 
               src="https://images.unsplash.com/photo-1629807472592-2649bfa09f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHF1YXJyeXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
@@ -71,6 +76,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1630288214173-a119cf823388?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'" 
               src="https://images.unsplash.com/photo-1630288214173-a119cf823388?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -80,6 +86,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://plus.unsplash.com/premium_photo-1663045584825-90a22961a4de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHF1YXJyeSUyMHN0b25lfGVufDB8fDB8fHww'" 
               src="https://plus.unsplash.com/premium_photo-1663045584825-90a22961a4de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHF1YXJyeSUyMHN0b25lfGVufDB8fDB8fHww"
               alt=""
             />
@@ -87,6 +94,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1517089472343-85fc51aeb327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVhcnJ5fGVufDB8fDB8fHww'" 
               src="https://images.unsplash.com/photo-1517089472343-85fc51aeb327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVhcnJ5fGVufDB8fDB8fHww"
               alt=""
             />
@@ -94,6 +102,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://plus.unsplash.com/premium_photo-1682144338642-76e1cb277c90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'" 
               src="https://plus.unsplash.com/premium_photo-1682144338642-76e1cb277c90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -103,6 +112,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1505833464198-4993b36cdfab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cXVhcnJ5fGVufDB8fDB8fHww0'" 
               src="https://images.unsplash.com/photo-1505833464198-4993b36cdfab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cXVhcnJ5fGVufDB8fDB8fHww0"
               alt=""
             />
@@ -110,6 +120,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1573156667488-5c0cec674762?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cXVhcnJ5fGVufDB8fDB8fHww'" 
               src="https://images.unsplash.com/photo-1573156667488-5c0cec674762?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cXVhcnJ5fGVufDB8fDB8fHww"
               alt=""
             />
@@ -117,6 +128,7 @@
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
+              @click="showImageModal = true; enlargedImageSrc = 'https://images.unsplash.com/photo-1517089472343-85fc51aeb327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVhcnJ5fGVufDB8fDB8fHww'" 
               src="https://images.unsplash.com/photo-1517089472343-85fc51aeb327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVhcnJ5fGVufDB8fDB8fHww"
               alt=""
             />
@@ -161,11 +173,27 @@
     </div>
   </div>
   </section>
+
+  <div v-if="showImageModal" class="font-sans bg-gray-100 flex items-center justify-center h-screen">
+
+    <div  class="fixed z-10 inset-0 flex items-center justify-center">
+      <div class="absolute inset-0 bg-gray-500 opacity-75" @click="showImageModal = false"></div>
+      <div class="relative bg-white rounded-lg overflow-hidden shadow-xl max-w-screen-md  m-4" x-transition:enter="transition ease-out duration-300 transform opacity-0 scale-95" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200 transform opacity-100 scale-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-cloak>
+        <!-- Modal panel -->
+        <div class="p-4">
+          <img :src="enlargedImageSrc" alt="Enlarged Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>
 <script>
 export default {
     data() {
         return {
+          enlargedImageSrc:'https://images.unsplash.com/photo-1517089472343-85fc51aeb327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVhcnJ5fGVufDB8fDB8fHww',
+            showImageModal:false,
             news : [
                 {
                     image: 'https://images.unsplash.com/photo-1505833464198-4993b36cdfab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D',

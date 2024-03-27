@@ -1,126 +1,109 @@
 <template>
-    <p class="bg-black text-white py-5 px-5 md:px-20">
-        <span class="bg-yellow-600 px-3 font-semibold">Tonnage calculator</span>
-        Utilize our calculator to estimate the required quantity. Enter the dimensions of the area you intend to fill and click "calculate". Following that, you can input your information to receive a quotation via email. Alternatively, if time is of the essence, feel free to contact us directly to place your order over the phone.
-    </p>
-    <div class="tonnage flex justify-center items-center">
-    <div class="shadow-lg p-5  bg-white text-black">    
-        <h1 class="font-extrabold px-3 bg-black text-white"><span class="bg-yellow-600 py-2 font-black px-1">Tonnage</span>  Calculator</h1>
-        <div class=" rounded px-8 pt-6 pb-8 mb-4">
-            <div>
-                <label for="width" class="block text-sm font-medium leading-6 text-gray-900">Width</label>
-                <div class="relative mt-2 focus:ring-0 focus-visible:ring-1 rounded-md shadow-sm">
-                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                        <span class="text-gray-500 sm:text-sm"><i class="bi bi-arrows"></i></span>
-                    </div>
-                    <input type="text" name="width" id="width" v-model="width" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-yellow-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" placeholder="0.00">
-                    <div class="absolute inset-y-0 right-0 flex items-center">
-                    <label for="unit" class="sr-only">Unit</label>
-                    <select v-model="widthUnit" id="unit" name="unit" class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm">
-                        <option value="m">meters</option>
-                        <option value="y">yards</option>
-                        <option value="f">feet</option>
-                    </select>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-2">
-                <label for="length" class="block text-sm font-medium leading-6 text-gray-900">Length</label>
-                <div class="relative mt-2 rounded-md shadow-sm">
-                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                    <span class="text-gray-500 sm:text-sm"><i class="bi bi-arrows"></i></span>
-                    </div>
-                    <input type="text" name="length" id="length" v-model="length" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-yellow-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" placeholder="0.00">
-                    <div class="absolute inset-y-0 right-0 flex items-center">
-                    <label for="unit" class="sr-only">Unit</label>
-                    <select v-model="lengthUnit" id="unit" name="unit" class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm">
-                        <option value="m">meters</option>
-                        <option value="y">yards</option>
-                        <option value="f">feet</option>
-                    </select>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-2">
-                <label for="depth" class="block text-sm font-medium leading-6 text-gray-900">Depth</label>
-                <div class="relative mt-2 rounded-md shadow-sm">
-                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                    <span class="text-gray-500 sm:text-sm"><i class="bi bi-arrows-collapse"></i></span>
-                    </div>
-                    <input type="text" name="depth" id="depth" v-model="depth" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-yellow-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" placeholder="0.00">
-                    <div class="absolute inset-y-0 right-0 flex items-center">
-                    <label for="unit" class="sr-only">Unit</label>
-                    <select v-model="depthUnit" id="unit" name="unit" class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-1 focus:ring-inset focus:ring-yellow-600 sm:text-sm">
-                        <option value="m">meters</option>
-                        <option value="y">yards</option>
-                        <option value="f">feet</option>
-                    </select>
-                    </div>
-                </div>
-            </div>
+<p class="bg-black text-white py-5 px-5 md:px-20">
+    <span class="bg-yellow-600 px-3 font-semibold">Tonnage/Block calculator</span>
+    Utilize our calculator to estimate the required quantity. Enter the dimensions of the area you intend to fill and click "calculate". Following that, you can input your information to receive a quotation via email. Alternatively, if time is of the essence, feel free to contact us directly to place your order over the phone.
+</p>
+  <div class="bg-gray-100 font-sans flex h-screen items-center justify-center">
+    <div class="p-8">
+      <div class="max-w-md mx-auto">
+        <div class="mb-4 flex space-x-4 p-2 bg-white  shadow-md">
+          <button @click="currentComponent = 'tonnageCalcVue'; isResult = false" :class="{ 'bg-yellow-600 text-white': currentComponent === 'tonnageCalcVue'}" class="flex-1 py-2 px-4  focus:outline-none focus:shadow-outline-yellow transition-all duration-300">Tonnage</button>
+          <button @click="currentComponent = 'blockCalcVue'; isResult = false" :class="{ 'bg-yellow-600 text-white': currentComponent === 'blockCalcVue'}" class="flex-1 py-2 px-4  focus:outline-none focus:shadow-outline-yellow transition-all duration-300">Block</button>
         </div>
-        <div>
-            <button @click="calculate" class="bg-yellow-600  text-white font-semibold shadow-md hover:bg-yellow-500 w-4/5 ">Calculate</button>
-            <button @click="reset" class="bg-black w-1/5 text-white font-semibold shadow-md hover:bg-slate-800 "><i class="bi bi-arrow-clockwise"></i></button>
+        <div class="transition-all duration-300 bg-white p-4  shadow-md border-l-4 border-yellow-600">
+          <component :is="currentComponent" @result="acceptResults" v-if="currentPosition == 'calculate'"></component>
+          <div v-if="currentPosition == 'result'" class=" min-w-72  text-slate-600">
+            <h4 class="font-bold ">Results</h4>
+            <div class="flex justify-between hover:bg-slate-200 px-4" v-for="(value, key) in result" :key="key">
+              <p class="font-semibold ">{{key}}</p>
+              <p>{{value}}</p>
+            </div>
+            <button class="bg-yellow-600 text-white hover:bg-yellow-500 w-full shadow my-5 py-1 font-medium" @click="currentPosition = 'quote'">Request for Quote</button>
+          </div>
+          <div class="mx-auto" v-if="currentPosition == 'quote'">
+            <form class="w-full max-w-lg shadow-lg p-5" ref="form" @submit.prevent="sendEmail()">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"  name="email" placeholder="Jane Doe">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="email" type="text" placeholder="abc@xyz.com">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="subject">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full  px-3 mb-6 md:mb-0">
+                    <textarea v-model="calcResults" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" rows="8" id="grid-city" type="text" name="message" placeholder="Albuquerque"></textarea>
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full  px-3 mb-6 md:mb-0">
+                        <button type="submit" class="bg-yellow-500 text-white  hover:bg-black px-6 mt-3 py-1 "> Send Message</button>
+                    </div>
+                </div>
+            </form>
+          </div>
         </div>
-        <p class="text-center my-3 bg-black text-yellow-500" v-if="tonnage !== null">Required Tonnage: <span class="bg-yellow-600 font-medium text-white px-3 pb-3">{{ tonnage }} tons</span> </p>
+      </div>
     </div>
   </div>
+
+
+
+
+  
 </template>
+
 <script>
+import blockCalcVue from '@/components/blockCalc.vue';
+import tonnageCalcVue from '@/components/tonnageCalc.vue';
+
 export default {
-    data() {
-        return {
-        width: null,
-        widthUnit: 'm',
-        length: null,
-        lengthUnit: 'm',
-        depth: null,
-        depthUnit: 'm',
-        tonnage: null
-        }
-    },
-      methods: {
-        calculate: function() {
-          let width = this.convertToMeters(this.width, this.widthUnit);
-          let length = this.convertToMeters(this.length, this.lengthUnit);
-          let depth = this.convertToMeters(this.depth, this.depthUnit);
+  components: {
+    blockCalcVue,
+    tonnageCalcVue
+  },
+  data() {
+    return {
+      currentComponent: 'tonnageCalcVue',
+      currentPosition: 'calculate',
+      result:{},
+      calcResults: 'Hello Precision Masters,\n\nI will like to request a quote for the Item and quantity below:\n\n'
+    };
+  },
+  methods:{
+    acceptResults(data){
+      this.result = data
+      this.currentPosition = 'result'
 
-          // Conversion factor from cubic meters to tons, adjust as needed
-          const conversionFactor = 1.25;
-
-          // Calculate volume in cubic meters
-          let volume = width * length * depth;
-
-          // Calculate tonnage
-          this.tonnage = (volume * conversionFactor).toFixed(2);
-        },
-        reset(){
-                this.width = null
-                this.widthUnit = 'm'
-                this.length = null
-                this.lengthUnit = 'm'
-                this.depth = null
-                this.depthUnit = 'm'
-                this.tonnage = null
-        },
-        convertToMeters: function(value, unit) {
-          switch (unit) {
-            case 'm':
-              return value;
-            case 'y':
-              return value * 0.9144; // 1 yard = 0.9144 meters
-            case 'f':
-              return value * 0.3048; // 1 foot = 0.3048 meters
-            default:
-              return 0;
-          }
+      for (const key in data) { 
+        if (Object.hasOwnProperty.call(data, key)) {
+          this.calcResults += `${key}: ${data[key]}\n`;
         }
       }
-}
+      this.calcResults += `\nI'm on stand by for your response\n\nRegards.`;
+    },
+    sendEmail() {
+      emailjs
+        .sendForm('precision_masters', 'ps_email', this.$refs.form, {
+          publicKey: 'CWJayqqHh4HTBzA14', 
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error);
+          },
+        );
+    },
+  }
+};
 </script>
+
 <style scoped>
-    .tonnage{
-        height: 7in;
-    }
 </style>

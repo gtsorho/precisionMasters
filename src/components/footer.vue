@@ -19,7 +19,7 @@
                 <h2 class="mb-4 text-lg">Contact</h2>
                 <p class="text-left"><a href="#" class="text-dark"><i class="fa d-inline mr-3 text-muted fa-phone"></i>+233 50 623 9693 | +233 30 395 6336</a></p>
                 <p><a href="#" class="text-dark"><i class="fa d-inline mr-3 text-muted fa-envelope-o"></i> info@precisionmasters.org</a></p>
-                <p class=""><a href="#" class="text-dark"><i class="fa d-inline mr-3 fa-map-marker text-muted"></i> House No. 71, Otinshie, East Legon, Accra</a></p>
+                <p class=""><a href="#" class="text-dark"><i class="fa d-inline mr-3 fa-map-marker text-muted"></i> House No. 91, Otinshie, East Legon, Accra</a></p>
             </div>
             <div class=" px-9 py-4 md:w-1/8">
                 <h2 class="mb-4 text-lg">Follow us</h2>
