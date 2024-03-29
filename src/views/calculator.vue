@@ -32,7 +32,7 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="subject"  type="text" placeholder="subject">
+                    <input required class="appearance-none block w-full bg-gray-100 text-center text-gray-700 border border-gray-200 rounded py-2 px-4 mb-3 leading-tight focus:outline-none font-bold focus:bg-white focus:border-gray-500" id="grid-password" name="subject" disabled value="Request for Quote"  type="text" placeholder="subject">
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-2">
@@ -73,11 +73,12 @@ export default {
       currentComponent: 'tonnageCalcVue',
       currentPosition: 'calculate',
       result:{},
-      calcResults: 'Hello Precision Masters,\n\nI will like to request a quote for the Item and quantity below:\n\n'
+      calcResults: ''
     };
   },
   methods:{
     acceptResults(data){
+      this.calcResults = 'Hello Precision Masters,\n\nI will like to request a quote for the Item and quantity below:\n\n'
       this.result = data
       this.currentPosition = 'result'
 
