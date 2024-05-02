@@ -6,11 +6,11 @@
   <div class="bg-gray-100 font-sans flex h-screen items-center justify-center">
     <div class="p-8">
       <div class="max-w-md mx-auto">
-        <div class="mb-4 flex space-x-4 p-2 bg-white  shadow-md">
+        <div class="mb-4 flex space-x-4 p-2 bg-white  shadow-lg">
           <button @click="currentComponent = 'tonnageCalcVue'; isResult = false" :class="{ 'bg-yellow-600 text-white': currentComponent === 'tonnageCalcVue'}" class="flex-1 py-2 px-4  focus:outline-none focus:shadow-outline-yellow transition-all duration-300">Tonnage</button>
           <button @click="currentComponent = 'blockCalcVue'; isResult = false" :class="{ 'bg-yellow-600 text-white': currentComponent === 'blockCalcVue'}" class="flex-1 py-2 px-4  focus:outline-none focus:shadow-outline-yellow transition-all duration-300">Block</button>
         </div>
-        <div class="transition-all duration-300 bg-white p-4  shadow-md border-l-4 border-yellow-600">
+        <div class="transition-all duration-300 bg-white p-4  shadow-lg border-l-4 border-yellow-600">
           <component :is="currentComponent" @result="acceptResults" v-if="currentPosition == 'calculate'"></component>
           <div v-if="currentPosition == 'result'" class=" min-w-72  text-slate-600">
             <h4 class="font-bold ">Results</h4>

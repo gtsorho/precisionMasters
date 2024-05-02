@@ -13,6 +13,7 @@
                     <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#about'}">About</router-link></li>
                     <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#products'}">Products</router-link></li>
                     <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#contact'}">Contact</router-link></li>
+                    <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'tonnage'}">Calculator</router-link></li>
                 </ul>
             </div>
             <div class="p-4 md:w-1/3">
