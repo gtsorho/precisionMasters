@@ -45,17 +45,17 @@
       </div>
     </div>
     <div class="mobile-menu  md:hidden" :class="showMobileNav ? 'block': 'hidden'">
-              <ul class="flex items-center text-sm space-x-8">        
+              <ul class="text-sm text-end space-x-8">        
           <li><router-link class="block px-4 py-1 text-white hover:bg-gray-700 rounded" :to="{name:'home', hash:'#home'}">Home</router-link></li>
           <li>
-            <div class="relative inline-block text-left" @click="toggleDropdown">
+            <div class=" inline-block text-left" @click="toggleDropdown">
               <button class="w-full  px-4 py-1 text-white hover:bg-gray-700 rounded  inline-flex justify-between items-center">
                 <span>About</span>
                 <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <div v-show="isOpen" class="absolute z-50 mt-2 w-fit rounded-md shadow-lg bg-black border border-gray-700">
+              <div v-show="isOpen" class=" z-50 mt-2 w-fit rounded-md shadow-lg bg-black">
                 <div class="py-1 text-gray-700 text-sm w-fit" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                   <router-link class="block px-5 py-1 text-white  hover:bg-gray-700  rounded" :to="{name:'about'}">About Us</router-link>
                   <router-link class="block px-5 py-1 text-white  w-max hover:bg-gray-700  rounded" :to="{name:'health'}">Health | Safety</router-link>
