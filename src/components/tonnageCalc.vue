@@ -1,7 +1,7 @@
 <template>
     <div class="tonnage flex justify-center items-center">
     <div class=" p-5  bg-white text-black">    
-        <h1 class="font-extrabold px-3 bg-black text-white"><span class="bg-yellow-600 py-2 font-black px-1">Tonnage</span>  Calculator</h1>
+        <h1 class="font-extrabold px-3 bg-black text-white"><span class="bg-yellow-600 py-2 font-black px-1">Cubic </span>  Calculator</h1>
         <div class=" rounded px-8 pt-6 pb-8 mb-4">
             <div class="mt-2">
               <label for="blockType" class="block text-sm font-medium leading-6 text-gray-900">Material</label>
@@ -65,7 +65,7 @@
             <button @click="calculate" class="bg-yellow-600  text-white font-semibold shadow-md hover:bg-yellow-500 w-4/5 ">Calculate</button>
             <button @click="reset" class="bg-black w-1/5 text-white font-semibold shadow-md hover:bg-slate-800 "><i class="bi bi-arrow-clockwise"></i></button>
         </div>
-        <p class="text-center my-3 bg-black text-yellow-500" v-if="tonnage !== null">Required Tonnage: <span class="bg-yellow-600 font-medium text-white px-3 pb-3">{{ tonnage }} tons</span> </p>
+        <p class="text-center my-3 bg-black text-yellow-500" v-if="tonnage !== null">Required Cubic : <span class="bg-yellow-600 font-medium text-white px-3 pb-3">{{ tonnage }} m<sup>3</sup> </span> </p>
     </div>
   </div>
 </template>
