@@ -93,7 +93,7 @@ export default {
           let length = this.convertToMeters(this.length, this.lengthUnit);
           let depth = this.convertToMeters(this.depth, this.depthUnit);
 
-          const conversionFactor = 1.25;
+          const conversionFactor = 1.6;
           let volume = width * length * depth;
           this.tonnage = (volume * conversionFactor).toFixed(2);
 

@@ -88,7 +88,7 @@ export default {
       const selectedBlock = this.blockTypes.find(block => block.name === this.blockType);
 
         const blockHeightInMeters = selectedBlock.height * conversionFactors['mm'];
-        const blockLengthInMeters = selectedBlock.height * conversionFactors['mm'];
+        const blockLengthInMeters = selectedBlock.length * conversionFactors['mm'];
 
       this.blocksNeeded =( (lengthInMeters * heightInMeters) / (blockHeightInMeters * blockLengthInMeters)).toFixed(2);
 
