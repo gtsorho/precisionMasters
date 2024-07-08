@@ -48,10 +48,10 @@
                 <form class="w-full max-w-lg shadow-lg p-5" ref="form" @submit.prevent="sendEmail()">
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"  name="email" placeholder="Jane Doe">
+                        <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"  name="name" placeholder="Name">
                         </div>
                         <div class="w-full md:w-1/2 px-3">
-                        <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="email" type="text" placeholder="abc@xyz.com">
+                        <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="email" type="text" placeholder="Email">
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-6">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-2">
                         <div class="w-full  px-3 mb-6 md:mb-0">
-                        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" name="message" placeholder="Albuquerque"></textarea>
+                        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" name="message" placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 mb-2">
