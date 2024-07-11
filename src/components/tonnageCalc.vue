@@ -65,7 +65,7 @@
             <button @click="calculate" class="bg-yellow-600  text-white font-semibold shadow-md hover:bg-yellow-500 w-4/5 ">Calculate</button>
             <button @click="reset" class="bg-black w-1/5 text-white font-semibold shadow-md hover:bg-slate-800 "><i class="bi bi-arrow-clockwise"></i></button>
         </div>
-        <p class="text-center my-3 bg-black text-yellow-500" v-if="tonnage !== null">Required Cubic : <span class="bg-yellow-600 font-medium text-white px-3 pb-3">{{ tonnage }} m<sup>3</sup> </span> </p>
+        <p class="text-center my-3 bg-black text-yellow-500" v-if=" tonnage > 0 ">Required Cubic : <span class="bg-yellow-600 font-medium text-white px-3 pb-3">{{ tonnage }} m<sup>3</sup> </span> </p>
     </div>
   </div>
 </template>
@@ -75,13 +75,13 @@ export default {
     data() {
         return {
         selsectedMaterial:'Fine Sand',
-        width: null,
+        width: 0,
         widthUnit: 'm',
-        length: null,
+        length: 0,
         lengthUnit: 'm',
-        depth: null,
+        depth: 0,
         depthUnit: 'm',
-        tonnage: null,
+        tonnage: 0,
         products:[
           'Crushed Stone','Gravel','Coarse  Sand', 'Fill Dirt', 'Riprap','Ballast','Quarry Dust', 'Fine Sand'
         ]
@@ -89,11 +89,14 @@ export default {
     },
       methods: {
         calculate: function() {
-          let width = this.convertToMeters(this.width, this.widthUnit);
-          let length = this.convertToMeters(this.length, this.lengthUnit);
-          let depth = this.convertToMeters(this.depth, this.depthUnit);
+          let width = this.convertToMeters(this.width, this.widthUnit) || 0;
+          let length = this.convertToMeters(this.length, this.lengthUnit) || 0;
+          let depth = this.convertToMeters(this.depth, this.depthUnit) || 0;
 
-          const conversionFactor = 1.6;
+          var conversionFactor = 1.6;
+          if(this.selsectedMaterial === "Quarry Dust") {
+            conversionFactor = 1.8
+          }
           let volume = width * length * depth;
           this.tonnage = (volume * conversionFactor).toFixed(2);
 
@@ -102,17 +105,17 @@ export default {
             depth: this.depth + this.depthUnit,
             length: this.length + this.lengthUnit,
             width: this.width + this.widthUnit,
-            result: this.tonnage + ' tons'
+            result: this.tonnage + '  m3'
           })
         },
         reset(){
-                this.width = null
+                this.width = 0
                 this.widthUnit = 'm'
-                this.length = null
+                this.length = 0
                 this.lengthUnit = 'm'
-                this.depth = null
+                this.depth = 0
                 this.depthUnit = 'm'
-                this.tonnage = null
+                this.tonnage = 0
         },
         convertToMeters: function(value, unit) {
           switch (unit) {

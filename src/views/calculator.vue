@@ -18,16 +18,19 @@
               <p class="font-semibold ">{{key}}</p>
               <p>{{value}}</p>
             </div>
-            <button class="bg-yellow-600 text-white hover:bg-yellow-500 w-full shadow my-5 py-1 font-medium" @click="currentPosition = 'quote'">Request for Quote</button>
+            <div class="flex justify-center">
+              <button class="bg-yellow-600 text-white hover:bg-yellow-500 w-full shadow my-5 py-1 font-medium" @click="currentPosition = 'quote'">Request for Quote</button>
+              <button class="bg-black w-28 text-white hover:bg-gray-600 mx-1 shadow my-5 py-1 font-medium" @click="currentPosition = 'calculate'">Back</button>
+            </div>
           </div>
           <div class="mx-auto" v-if="currentPosition == 'quote'">
             <form class="w-full max-w-lg shadow-lg p-5" ref="form" @submit.prevent="sendEmail()">
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"  name="email" placeholder="Jane Doe">
+                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"  name="name" placeholder="Name">
                     </div>
                     <div class="w-full md:w-1/2 px-3">
-                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="email" type="text" placeholder="abc@xyz.com">
+                    <input required class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="email" type="text" placeholder="Email">
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
